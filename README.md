@@ -11,3 +11,4 @@ npx create-next-app --example with-tailwindcss client
 
 ### my notes from this project
 - ctrl r in the terminal is recursive search 
+- add node_modules to global gitignore
