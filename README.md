@@ -5,7 +5,7 @@
 
 
 ## My steps:
-- create nest ap with tailwind:
+- create next app with tailwind:
 
 npx create-next-app --example with-tailwindcss client
 
