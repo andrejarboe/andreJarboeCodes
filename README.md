@@ -6,11 +6,16 @@
 
 ## My steps:
 - create next app with tailwind:
-npx create-next-app --example with-tailwindcss client
-- install sanity cli
-npm install -g @sanity/cli
+
+    npx create-next-app --example with-tailwindcss client
+
+- install sanity cli:
+
+    npm install -g @sanity/cli:
+
 - make sanity folder:
-sanity init --coupon sonny2022
+    
+    sanity init --coupon sonny2022
 
 ### my notes from this project
 - ctrl r in the terminal is recursive search 
