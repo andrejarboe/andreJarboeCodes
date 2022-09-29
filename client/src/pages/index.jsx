@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
       <Header />
       <Hero />
-      <ProjectsSection ></ProjectsSection>
+      <ProjectsSection />
     </div>
   );
 }
