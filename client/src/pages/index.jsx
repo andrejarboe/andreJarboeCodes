@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Footer } from "../components/Footer";
 import Header from "../components/Header";
 import { Hero } from "../components/Hero";
 import { ProjectsSection } from "../components/ProjectsSection";
@@ -16,6 +17,7 @@ export default function Home() {
       <Header />
       <Hero />
       <ProjectsSection />
+      <Footer />
     </div>
   );
 }
