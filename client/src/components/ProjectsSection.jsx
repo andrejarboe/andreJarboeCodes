@@ -169,7 +169,7 @@ export function ProjectsSection() {
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                 <a
                   href="#"
-                  className="flex w-full items-center justify-center rounded-md border border-transparent  px-8 py-3 text-base font-medium text-gray-100 bg-gray-500 hover:text-gray-100 md:py-4 md:px-10 md:text-lg"
+                  className="focus:outline-none rounded py-3 px-4 text-gray-600 border border-gray-600 flex justify-center items-center text-base hover:bg-gray-200 bg-transparent"
                 >
                   View All
                 </a>
