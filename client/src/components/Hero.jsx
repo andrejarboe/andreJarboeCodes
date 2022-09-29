@@ -5,9 +5,9 @@ export function Hero() {
     <section className="mt-12 mx-auto container max-w-7xl py-12 px-4 flex">
       <div className="w-full lg:w-3/5 flex flex-col my-auto ">
         <p className="text-2xl font-light">
-          Hi, my name is <span className="text-red">Andre Jarboe,</span>
+          Hi, my name is <span className="text-red-500">Andre Jarboe,</span> I'am a 
         </p>
-        <h1 className="text-6xl font-extrabold ">I'm a Software Engineer</h1>
+        <h1 className="text-6xl font-extrabold text-[#3f3d56]">Software Engineer</h1>
         <p class="text-lg text-gray-600 font-light leading-relaxed pt-8">
           I enjoy building tools that impact. Lorem ipsum dolor sit amet
           consectetur adipisicing elit. Itaque quasi perspiciatis quis deserunt
