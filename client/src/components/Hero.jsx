@@ -2,31 +2,47 @@ import React from "react";
 
 export function Hero() {
   return (
-    <div>
-      <div className="bg-indigo-700">
-        <div className="mx-auto max-w-2xl py-16 px-4 text-center sm:py-20 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            <span className="block">Boost your productivity.</span>
-            <span className="block">Start using our app today.</span>
-          </h2>
-          <p className="mt-4 text-lg leading-6 text-indigo-200">
-            Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-            Malesuada adipiscing sagittis vel nulla nec.
-          </p>
-          <a
-            href="#"
-            className="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-indigo-600 hover:bg-indigo-50 sm:w-auto"
-          >
-            Sign up for free
-          </a>
-          <a
-            href="#"
-            className="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-indigo-600 hover:bg-indigo-50 sm:w-auto"
-          >
-            Sign up for free
-          </a>
+    <section className="mt-12 mx-auto container max-w-7xl py-12 px-4 flex">
+      <div className="w-full lg:w-3/5 flex flex-col my-auto ">
+        <p className="text-2xl font-light">
+          Hi, my name is <span className="text-red">Andre Jarboe,</span>
+        </p>
+        <h1 className="text-6xl font-extrabold ">I'm a Software Engineer</h1>
+        <p class="text-lg text-gray-600 font-light leading-relaxed pt-8">
+          I enjoy building tools that impact. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Itaque quasi perspiciatis quis deserunt
+          quaerat voluptatum perferendis eos fugit, in ut facere iusto quam
+          minima laboriosam necessitatibus porro aspernatur! Ullam, minus.
+        </p>
+
+        <div className="mt-8 flex ">
+          <div className="inline-flex rounded-md shadow">
+            <a
+              href="#"
+              className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700"
+            >
+              View Linkedin
+            </a>
+          </div>
+          <div className="ml-3 inline-flex">
+            <a
+              href="#"
+              className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-100 px-5 py-3 text-base font-medium text-indigo-700 hover:bg-indigo-200"
+            >
+              View Github
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+      <div class="lg:w-2/5 justify-end">
+        {/* <img src="https://cdn.devdojo.com/images/january2022/heronew.png" /> */}
+        <img
+          // className="hidden h-60 space-y-5 px-4 md:inline-flex lg:h-96"
+          className="hidden md:block"
+          src="/img/hero.png"
+          alt="abstract pattern"
+        />
+      </div>
+    </section>
   );
 }
