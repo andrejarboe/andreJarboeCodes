@@ -7,7 +7,12 @@
 ## My steps:
 - create next app with tailwind:
 
-    npx create-next-app --example with-tailwindcss client
+    npx create-next-app client
+    cd client
+
+    npm install -D tailwindcss postcss autoprefixer
+    npx tailwindcss init -p
+
 
 - install sanity cli:
 
