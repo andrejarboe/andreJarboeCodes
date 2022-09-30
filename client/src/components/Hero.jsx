@@ -8,7 +8,7 @@ export function Hero() {
           Hi, my name is <span className="text-red-500">Andre Jarboe,</span> I'am a 
         </p>
         <h1 className="text-6xl font-extrabold text-[#3f3d56]">Software Engineer</h1>
-        <p class="text-lg text-gray-600 font-light leading-relaxed pt-8">
+        <p className="text-lg text-gray-600 font-light leading-relaxed pt-8">
           I enjoy building tools that impact. Lorem ipsum dolor sit amet
           consectetur adipisicing elit. Itaque quasi perspiciatis quis deserunt
           quaerat voluptatum perferendis eos fugit, in ut facere iusto quam
@@ -34,7 +34,7 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <div class="lg:w-2/5 justify-end">
+      <div className="lg:w-2/5 justify-end">
         {/* <img src="https://cdn.devdojo.com/images/january2022/heronew.png" /> */}
         <img
           // className="hidden h-60 space-y-5 px-4 md:inline-flex lg:h-96"
