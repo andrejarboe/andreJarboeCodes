@@ -21,3 +21,12 @@ export default function Home() {
     </div>
   );
 }
+
+export const gerServerSideProps = async () => {
+  const query = `*[_type == "project"]{
+    _id,
+    title,
+    slug,
+    description
+  }`
+}
