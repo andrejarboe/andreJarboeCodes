@@ -1,10 +1,10 @@
 {
   "root": true,
   "project": {
-    "name": "andrejarboeCodes"
+    "name": "andrejarboecodes"
   },
   "api": {
-    "projectId": "orxeqjvh",
+    "projectId": "o100hlko",
     "dataset": "production"
   },
   "plugins": [
