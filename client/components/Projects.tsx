@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 import { urlFor } from '../sanity';
 import { Project } from '../typings';
@@ -15,52 +16,33 @@ export default function Projects2({ projects }: Props) {
             </h2>
             <div className="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2  md:pt-12 lg:grid-cols-3">
                 {projects.map((project) => (
-                    <a
+                    <Link
                         key={project._id}
-                        // href={project.href}
-                        href={project?.slug.current}
-                        className="flex flex-col overflow-hidden rounded-lg shadow-lg"
+                        href={`/project/${project?.slug.current}`}
                     >
-                        <div className="flex-shrink-0">
-                            <img
-                                className="h-60w-full object-cover"
-                                // src={project.imageUrl}
-                                src={urlFor(project?.image).url()}
-                                alt=""
-                            />
-                        </div>
-                        <div className="flex flex-1 flex-col justify-between bg-white p-6">
-                            <div className="flex-1">
-                                <p className="text-sm font-medium text-primary">
-                                    <a 
-                                        // href={project.category.href} 
-                                        className="hover:underline">
-                                        {/* {project.category.name} */}
-                                        {project.technologies[0].title}
-                                    </a>
-                                </p>
-                                <a 
-                                    // href={project.href} 
-                                    className="mt-2 block">
-                                    <p className="text-xl font-semibold text-gray-900">
-                                        {project.title}
-                                    </p>
-                                    <p className="mt-3 text-base text-gray-500">
-                                        {project.summary}
-                                    </p>
-                                </a>
+                        <div className="border rounded-lg group cursor-pointer overflow-hidden">
+                            <div>
+                                <img
+                                    className="h-60 w-full object-cover group-hover:scale-105 transition-transform duration-200 ease-in-out"
+                                    src={urlFor(project?.image).url()}
+                                    alt={project?.title + ' image'} />
                             </div>
-                            <div className="mt-6 flex items-center">
-                                <div className="">
-                                    <div className="flex space-x-1 text-sm text-gray-500">
-                                        {/* <time dateTime={project.datetime}>{project.date}</time> */}
-                                    </div>
+                            <div className="flex justify-between p-5 bg-white">
+                                <div>
+                                    <p className="text-sm font-medium text-primary">
+                                        {project.technologies[0].title}
+                                    </p>
+                                    <p className="text-xl font-semibold text-secondary">{project.title}</p>
+                                    <p className="mt-3 text-base text-gray-500">
+                                        {project?.summary}
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                    </a>
-                ))}
-            </div>
+                    </Link>
+                ))
+                }
+            </div >
 
             <div className="mx-auto mt-5 max-w-md sm:flex sm:justify-center md:mt-8">
 
@@ -73,6 +55,6 @@ export default function Projects2({ projects }: Props) {
                     </a>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
