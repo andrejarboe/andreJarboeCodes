@@ -11,7 +11,7 @@ export default function Hero({ pageInfo }: Props) {
         <section className="mt-12 mx-auto container max-w-7xl py-12 px-4 flex">
             <div className="w-full lg:w-3/5 flex flex-col my-auto ">
                 <p className="text-2xl font-light">
-                    Hi, my name is <span className="text-primary">{pageInfo.name},</span> I'am a
+                    Hi, my name is <span className="text-primary">{pageInfo.name},</span> I&apos;am a
                 </p>
                 <h1 className="text-6xl font-extrabold text-[#3f3d56]">{pageInfo.role}</h1>
                 <p className="text-lg text-gray-600 font-light leading-relaxed pt-8">
