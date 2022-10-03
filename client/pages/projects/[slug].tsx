@@ -39,6 +39,7 @@ export default function projects({ project, socials }: Props) {
                     >
                         <a
                             target="_blank"
+                            rel="noreferrer"
                             className="cursor-pointer mt-3 shadow sm:mt-0  focus:outline-none rounded py-3 px-4 text-secondary border border-secondary flex justify-center items-center text-base hover:bg-gray-200 bg-transparent"
 
                             href={project.linkToBuild}
@@ -51,6 +52,7 @@ export default function projects({ project, socials }: Props) {
                     >
                         <a
                             target="_blank"
+                            rel="noreferrer"
                             className="cursor-pointer mt-3 shadow sm:mt-0 sm:ml-3 focus:outline-none rounded py-3 px-4 text-secondary border border-secondary flex justify-center items-center text-base hover:bg-gray-200 bg-transparent"
                             // className='text-xl mt-4 mb-3 border border-secondary '
                             href={project.linkToRepo}
