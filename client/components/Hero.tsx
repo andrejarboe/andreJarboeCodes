@@ -21,18 +21,21 @@ export default function Hero({ pageInfo }: Props) {
                 <div className="mt-8 flex ">
                     <div className="inline-flex rounded-md shadow">
                         <a
-                            href="#"
+                            href={pageInfo?.button1Link}
+                            target="_blank"
                             className="inline-flex items-center justify-center rounded-md border border-transparent bg-red-600 px-5 py-3 text-base font-medium text-white hover:bg-red-700"
                         >
-                            View Linkedin
+                            {pageInfo?.heroButton1Text}
                         </a>
                     </div>
                     <div className="ml-3 inline-flex">
                         <a
-                            href="#"
+                            href={pageInfo?.button2Link}
+                            target="_blank"
                             className="inline-flex items-center justify-center rounded-md border border-transparent bg-primary/10 px-5 py-3 text-base font-medium text-red-700 hover:bg-primary/25"
                         >
-                            View Github
+                            {pageInfo?.heroButton1Text}
+
                         </a>
                     </div>
                 </div>

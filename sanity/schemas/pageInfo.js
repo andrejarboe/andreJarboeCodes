@@ -29,7 +29,7 @@ export default {
     {
       name: "heroButton1Text",
       title: "Hero Button1 Text",
-      type: "text",
+      type: "string",
     },
     {
       name: "button1Link",
@@ -39,7 +39,7 @@ export default {
     {
       name: "heroButton2Text",
       title: "Hero Button2 Text",
-      type: "text",
+      type: "string",
     },
     {
       name: "button2Link",

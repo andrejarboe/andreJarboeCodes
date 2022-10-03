@@ -22,6 +22,10 @@ export interface PageInfo extends SanityBody {
   heroImage: Image;
   name: string;
   profilePic: Image;
+  heroButton1Text: string;
+  button1Link: string;
+  heroButton2Text: string;
+  button2Link: string;
 }
 
 export interface Technology extends SanityBody {
