@@ -1,4 +1,4 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps } from 'next'
 import Head from 'next/head'
 
 import { Experience, PageInfo, Project, Skill, Social } from "../typings";
@@ -7,6 +7,7 @@ import { fetchExperiences } from "../utils/fetchExperiences";
 import { fetchSkills } from "../utils/fetchSkills";
 import { fetchProjects } from "../utils/fetchProjects";
 import { fetchSocial } from "../utils/fetchSocials";
+import Hero from '../components/Hero';
 
 type Props = {
   pageInfo: PageInfo;
@@ -16,17 +17,39 @@ type Props = {
   socials: Social[];
 };
 
-const Home: NextPage = () => {
+const Home = ({ projects, skills, pageInfo, experiences, socials }: Props) => {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Andre's Portfolio | Home</title>
         <meta name="description" content="Andre Jarboe Software Engineer Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+    <Hero pageInfo={pageInfo} />
     </div>
   )
 }
 
 export default Home
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const pageInfo: PageInfo = await fetchPageInfo();
+  const experiences: Experience[] = await fetchExperiences();
+  const skills: Skill[] = await fetchSkills();
+  const projects: Project[] = await fetchProjects();
+  const socials: Social[] = await fetchSocial();
+
+  return {
+    props: {
+      pageInfo,
+      experiences,
+      skills,
+      projects,
+      socials,
+    },
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 10 seconds
+    revalidate: 10,
+  }
+}
