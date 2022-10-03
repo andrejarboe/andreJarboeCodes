@@ -23,6 +23,7 @@ export default function Hero({ pageInfo }: Props) {
                         <a
                             href={pageInfo?.button1Link}
                             target="_blank"
+                            rel="noreferrer"
                             className="inline-flex items-center justify-center rounded-md border border-transparent bg-red-600 px-5 py-3 text-base font-medium text-white hover:bg-red-700"
                         >
                             {pageInfo?.heroButton1Text}
@@ -32,6 +33,7 @@ export default function Hero({ pageInfo }: Props) {
                         <a
                             href={pageInfo?.button2Link}
                             target="_blank"
+                            rel="noreferrer"
                             className="inline-flex items-center justify-center rounded-md border border-transparent bg-primary/10 px-5 py-3 text-base font-medium text-red-700 hover:bg-primary/25"
                         >
                             {pageInfo?.heroButton1Text}
