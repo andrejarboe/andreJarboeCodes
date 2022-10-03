@@ -23,7 +23,7 @@ export default function index({ projects, socials }: Props) {
     return (
         <div>
             <Head>
-                <title>Andre's Portfolio | Projects</title>
+                <title>{`Andre's Portfolio | Projects`}</title>
                 <meta name="description" content="Andre Jarboe Software Engineer Portfolio" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

@@ -17,7 +17,7 @@ export default function about({ socials }: Props) {
     return (
         <div>
             <Head>
-                <title>Andre's Portfolio | About</title>
+                <title>{`Andre's Portfolio | About`}</title>
                 <meta name="description" content="Andre Jarboe Software Engineer Portfolio" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

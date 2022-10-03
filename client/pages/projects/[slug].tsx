@@ -20,7 +20,7 @@ export default function projects({ project, socials }: Props) {
     return (
         <div>
             <Head>
-                <title>Andre's Portfolio | Projects</title>
+                <title>{`Andre's Portfolio | Projects`}</title>
                 <meta name="description" content="Andre Jarboe Software Engineer Portfolio" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

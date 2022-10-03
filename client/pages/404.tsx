@@ -17,7 +17,7 @@ export default function custom404({ socials }: Props) {
     return (
         <div>
             <Head>
-                <title>Andre's Portfolio | Home</title>
+                <title>{`Andre's Portfolio | 404`}</title>
                 <meta name="description" content="Andre Jarboe Software Engineer Portfolio" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
