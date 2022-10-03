@@ -18,7 +18,7 @@ export default function Projects2({ projects }: Props) {
                     <a
                         key={project._id}
                         // href={project.href}
-                        href="#"
+                        href={project?.slug.current}
                         className="flex flex-col overflow-hidden rounded-lg shadow-lg"
                     >
                         <div className="flex-shrink-0">
