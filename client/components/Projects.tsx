@@ -46,13 +46,13 @@ export default function Projects2({ projects }: Props) {
 
             <div className="mx-auto mt-5 max-w-md sm:flex sm:justify-center md:mt-8">
 
-                <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-                    <a
-                        href="#"
-                        className="focus:outline-none rounded py-3 px-4 text-secondary border border-secondary flex justify-center items-center text-base hover:bg-gray-200 bg-transparent"
+                <div className="cursor-pointer mt-3 shadow sm:mt-0 sm:ml-3 focus:outline-none rounded py-3 px-4 text-secondary border border-secondary flex justify-center items-center text-base hover:bg-gray-200 bg-transparent">
+                    <Link
+                        href="/projects"
+
                     >
                         View All
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div >
