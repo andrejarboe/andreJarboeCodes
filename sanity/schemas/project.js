@@ -17,7 +17,7 @@ export default {
           source: 'title',
           maxLength: 96
         }
-      }
+      },
       {
         name: "image",
         title: "Image",
@@ -46,6 +46,16 @@ export default {
         name: "linkToRepo",
         title: "Link To Repo",
         type: "url",
+      },
+      {
+        name: "publishedAt",
+        title: "Published at",
+        type: "datetime",
+      },
+      {
+        name: "body",
+        title: "Body",
+        type: "blockContent",
       },
     ],
   };
