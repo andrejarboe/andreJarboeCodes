@@ -16,14 +16,14 @@ export default function Projects2({ projects }: Props) {
             <div className="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2  md:pt-12 lg:grid-cols-3">
                 {projects.map((project) => (
                     <a
-                        key={project.title}
+                        key={project._id}
                         // href={project.href}
                         href="#"
                         className="flex flex-col overflow-hidden rounded-lg shadow-lg"
                     >
                         <div className="flex-shrink-0">
                             <img
-                                className="h-48 w-full object-cover"
+                                className="h-60w-full object-cover"
                                 // src={project.imageUrl}
                                 src={urlFor(project?.image).url()}
                                 alt=""
