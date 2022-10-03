@@ -9,9 +9,9 @@ const data = {
   siteMap: [
     { name: "Home", href: "/" },
     { name: "projects", href: "/projects" },
-    { name: "About", href: "/about" },
-    { name: "Blog", href: "/blog" },
-    { name: "Contact", href: "/contact" },
+    // { name: "About", href: "/about" },
+    // { name: "Blog", href: "/blog" },
+    // { name: "Contact", href: "/contact" },
   ],
 };
 
