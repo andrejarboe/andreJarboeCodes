@@ -8,6 +8,8 @@ import { fetchSkills } from "../utils/fetchSkills";
 import { fetchProjects } from "../utils/fetchProjects";
 import { fetchSocial } from "../utils/fetchSocials";
 import Hero from '../components/Hero';
+import Projects2 from '../components/Projects';
+import Footer from '../components/Footer';
 
 type Props = {
   pageInfo: PageInfo;
@@ -25,7 +27,9 @@ const Home = ({ projects, skills, pageInfo, experiences, socials }: Props) => {
         <meta name="description" content="Andre Jarboe Software Engineer Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    <Hero pageInfo={pageInfo} />
+      <Hero pageInfo={pageInfo} />
+      <Projects2 projects={projects} />
+      <Footer socials={socials} />
     </div>
   )
 }
