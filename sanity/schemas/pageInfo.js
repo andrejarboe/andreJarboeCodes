@@ -27,6 +27,26 @@ export default {
       type: "text",
     },
     {
+      name: "heroButton1Text",
+      title: "Hero Button1 Text",
+      type: "text",
+    },
+    {
+      name: "button1Link",
+      title: "Button 1 Link",
+      type: "url",
+    },
+    {
+      name: "heroButton2Text",
+      title: "Hero Button2 Text",
+      type: "text",
+    },
+    {
+      name: "button2Link",
+      title: "Button 2 Link",
+      type: "url",
+    },
+    {
       name: "profilePic",
       title: "ProfilePic",
       type: "image",
