@@ -15,12 +15,16 @@ type Props = {
 
 export default function index({ socials }: Props) {
     return (
-        <div>            <Head>
-            <title>Andre's Portfolio | Projects</title>
-            <meta name="description" content="Andre Jarboe Software Engineer Portfolio" />
-            <link rel="icon" href="/favicon.ico" />
-        </Head>
+        <div> 
+            <Head>
+                <title>Andre's Portfolio | Projects</title>
+                <meta name="description" content="Andre Jarboe Software Engineer Portfolio" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <Header />
+            <section>
+                
+            </section>
             <Footer socials={socials} />
         </div>
     )

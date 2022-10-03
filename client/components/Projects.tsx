@@ -18,7 +18,7 @@ export default function Projects2({ projects }: Props) {
                 {projects.map((project) => (
                     <Link
                         key={project._id}
-                        href={`/project/${project?.slug.current}`}
+                        href={`/projects/${project?.slug.current}`}
                     >
                         <div className="border rounded-lg group cursor-pointer overflow-hidden">
                             <div>
