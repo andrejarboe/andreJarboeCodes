@@ -34,7 +34,9 @@ export default function index({ projects, socials }: Props) {
                 <div>
                     {projects.map((project) => (
 
-                        <div className="relative">
+                        <div 
+                        key={project._id}
+                        className="relative">
                             <Link href={`/projects/${project?.slug.current}`}>
                                 <a href="/lead_generation.html" className="flex flex-col md:flex-row gap-x-12 p-2 md:h-60 my-20 rounded-sm overflow-hidden shadow-sm hover:shadow-md border-gray-200 bg-white custom_color_border">
 
