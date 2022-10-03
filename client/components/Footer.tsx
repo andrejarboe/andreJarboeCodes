@@ -11,8 +11,8 @@ export default function Footer({ socials }: Props) {
     main: [
       { name: "Home", href: "#" },
       { name: "Projects", href: "#" },
-      { name: "About", href: "#" },
-      { name: "Contact", href: "#" }
+      // { name: "About", href: "#" },
+      // { name: "Contact", href: "#" }
     ],
 
   };
