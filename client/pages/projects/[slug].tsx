@@ -7,6 +7,7 @@ import { sanityClient, urlFor } from "../../sanity";
 import { Project, Social } from "../../typings";
 import { fetchSocial } from "../../utils/fetchSocials";
 import Footer from '../../components/Footer';
+import ProjectBanner from '../../components/ProjectBanner';
 
 type Props = {
     socials: Social[];
@@ -22,11 +23,12 @@ export default function projects({ project, socials }: Props) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
+            {/* <ProjectBanner />
             <img
                 className="h-40 w-full object-cover object-center"
                 src={urlFor(project.image).url()!}
                 alt={project.title}
-            />
+            /> */}
             <article>
                 <h1 className=''>{project.title}</h1>
             </article>
