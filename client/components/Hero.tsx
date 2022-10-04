@@ -36,7 +36,7 @@ export default function Hero({ pageInfo }: Props) {
                             rel="noreferrer"
                             className="inline-flex items-center justify-center rounded-md border border-transparent bg-primary/10 px-5 py-3 text-base font-medium text-red-700 hover:bg-primary/25"
                         >
-                            {pageInfo?.heroButton1Text}
+                            {pageInfo?.heroButton2Text}
 
                         </a>
                     </div>
